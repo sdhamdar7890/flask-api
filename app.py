@@ -6,9 +6,9 @@ app = Flask(__name__)
 def login():
     if request.method== 'POST':
         user = request.form['user']
-        return redirect(url_for('home', user=user))
+        return "Sucessfully logged in"
     else:
-        return redirect
+        return "login here"
 
 
 
